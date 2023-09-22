@@ -50,6 +50,7 @@ function App() {
         </div>
       </header>
     </div>
+    );
   }
 
   // Call the Move_btn() function with parentheses in the onMouseOver event handler.
