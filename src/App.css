@@ -1,0 +1,85 @@
+#GFG button{
+    padding: 10px;
+    font-size: 25px;
+    border-radius: 5px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    position: relative;
+    border: 2px solid transparent;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.819);
+}
+
+#GFG button:hover{
+    cursor:grab;
+}
+
+#GFG {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#GFG::before {
+    content: "";
+    position: absolute;
+    z-index: -3;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+
+    /* Specify the background image to be used */
+    background-image: url("/public/images/PiPhi.png");
+    background-size:contain;
+
+    /* Specify the background image */
+    opacity: 0.2;
+}
+
+#GFG p, #GFG h2{
+    background-color: white;
+    margin-inline: 20px;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+#GFG h1{
+    position: fixed;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 10vw;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.748);
+    top: 55vh;
+    color: rgb(35, 68, 36);
+}
+
+@keyframes done{
+    0%{
+        font-size: 43px;
+    }
+    50%{
+        font-size: 45px;
+    }
+    100%{
+        font-size: 43px;
+    }
+}
+
+#GFG h4{
+    font-size: 40px;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    position: fixed;
+
+    animation-name: done;
+    animation-duration: 1s;
+    animation-direction:normal;
+    animation-iteration-count: infinite;
+    animation-fill-mode:forwards ;
+}
