@@ -46,11 +46,10 @@ function App() {
       <header className="App-header">
         <div id="GFG">
           <h2>Please Open this link via a laptop so we can ensure you've recieved it.</h2>
-          <p>Thank you!</p>
+          <p>Thank you and <strong>Go Gators</strong>!</p>
         </div>
       </header>
     </div>
-    );
   }
 
   // Call the Move_btn() function with parentheses in the onMouseOver event handler.
